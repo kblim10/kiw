@@ -1,0 +1,207 @@
+html {
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed    ;
+    background-color: rgba(0, 0, 0, 0.500);
+    background-blend-mode:overlay;
+}
+
+img.saya{
+    width:190px;
+    height:400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 25px;
+    animation-name: move;
+    animation-duration: 3s;
+    position: relative;
+    animation-timing-function: ease ;
+    padding: 5px;
+    box-shadow: 0 5px 5px 5px rgba(71, 97, 170, 0.466);
+    top: 25px;
+
+}
+
+@keyframes  move {
+    0% {
+        top: 750px;
+        opacity: 0%;
+    }
+    50%,
+    75%,
+    100%{
+        top: 25px;
+        opacity: 100%;
+    }
+}
+
+ul {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 15px;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: auto;
+    margin-right: auto;
+    line-height: 50 px;
+    top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+}
+
+li {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    margin: 15px;
+    display: flex;
+}
+
+
+
+.wrap {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    box-shadow: 0 5px 5px 5px rgba(75, 55, 25, 5);
+    border-radius: 15px;
+    margin: 25px;
+    padding: 10px;
+    
+}
+
+.brand {
+    color:rgb(97, 164, 250);
+    font-weight: 700;
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+.biodata {
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    margin-right: 1%;
+    margin-bottom: 110px;
+
+}
+
+.about {
+    color: rgb(46, 107, 177);
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+img.profil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    animation-name: big;
+    position: relative;
+    margin: auto;
+}
+
+img.profil:hover {
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+
+@keyframes logo {
+    0%{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+    }
+
+    50%,
+    75%,
+    100% {
+        width: 65px;
+        height: 65px;
+        border-radius: 65px;
+    }
+}
+
+
+
+.about:hover {
+    animation-name: zoom ;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    0% {
+        font-size: 20px;
+        box-shadow: 0 -10 0 0 black;
+        text-underline-position: above;
+    }
+    50%,
+    75%,
+    100% {
+        font-size: 25px;
+        box-shadow: 0 3px 0 0 white;
+        text-underline-position:below; 
+    }
+}
+.data {
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes  move {
+    0% {
+        top: 750px;
+        opacity: 0%;
+    }
+    50%,
+    75%,
+    100%{
+        top: 25px;
+        opacity: 100%;
+    }
+}
+
+.brand:hover {
+    animation-name: miring;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+
+}
+
+@keyframes miring {
+    0% {
+        transform: skew(0deg);
+        transform: rotate3d(0deg);
+        font-size: 100%;
+    }
+    50%,
+    75%,
+    100% {
+        transform: skew(25deg);
+        transform: rotate3d(90deg);
+        font-size: 150%;
+        box-shadow: 0 5px 0 0 white;
+        border-radius: 5px;
+    }
+
+}
+
